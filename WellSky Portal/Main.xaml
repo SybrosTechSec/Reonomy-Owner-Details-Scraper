@@ -1,0 +1,803 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uasc="clr-namespace:UiPath.Activities.System.Collections;assembly=UiPath.System.Activities" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugas="clr-namespace:UiPath.GSuite.Activities.Sheets;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets.Enums</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.GSuite.Activities.Models</x:String>
+      <x:String>UiPath.GSuite.Sheets.Enums</x:String>
+      <x:String>UiPath.GSuite.Sheets.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.GSuite.Drive.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Semantic.Activities</x:String>
+      <x:String>UiPath.GSuite.Activities.Contracts</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.Activities.System.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataRow1</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataRow1</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1156,13182.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="ReadResult" />
+      <Variable x:TypeArguments="x:Int32" Name="CurrentRow" />
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="IDX" />
+      <Variable x:TypeArguments="sd:DataTable" Name="UniqueOutput" />
+      <Variable x:TypeArguments="sd:DataTable" Name="Otput_DT" />
+      <Variable x:TypeArguments="x:String" Name="ClientName" />
+      <Variable x:TypeArguments="x:String" Name="DesiredColor" />
+      <Variable x:TypeArguments="x:String" Name="DateTimeTogether" />
+      <Variable x:TypeArguments="x:String" Name="DateOnly" />
+      <Variable x:TypeArguments="x:String" Name="TimeString" />
+      <Variable x:TypeArguments="x:String" Name="StartTime" />
+      <Variable x:TypeArguments="x:String" Name="EndTime" />
+      <Variable x:TypeArguments="x:String" Name="EmailContactCombined" />
+      <Variable x:TypeArguments="x:String" Name="Email" />
+      <Variable x:TypeArguments="x:Int32" Name="Serial" />
+      <Variable x:TypeArguments="x:String" Name="Color" />
+      <Variable x:TypeArguments="x:String" Name="EmployeeName" />
+      <Variable x:TypeArguments="scg:List(x:Object)" Name="SheetList" />
+      <Variable x:TypeArguments="x:String" Name="LastEmployee" />
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:Int32)" Name="Counter" />
+      <Variable x:TypeArguments="x:String" Name="SheetName" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="ProcessedEmployee" />
+      <Variable x:TypeArguments="sd:DataTable" Name="AlreadyEmployee" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Login  WellSky Personal Care" sap:VirtualizedContainerService.HintSize="1153.6,13159.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="677ad1d9-56e1-4edc-a3c5-b52b759e323e" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1120,12919.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NCheckState DisplayName="Login" sap:VirtualizedContainerService.HintSize="1086.4,805.6" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="677ad1d9-56e1-4edc-a3c5-b52b759e323e" Version="V4">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,555.2" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="677ad1d9-56e1-4edc-a3c5-b52b759e323e" Text="[&quot;automations@arccCenter.org[k(Enter)]&quot; +&quot;[k(Tab)]&quot;]" Version="V4">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://arcccenter.clearcareonline.com/login/?next=/dashboard/" CVScreenId="2771b6a2-1b47-4f3f-b0c1-904369e4c05b" DesignTimeRectangle="740, 598, 473, 58" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='id_username' tag='INPUT' /&gt;" Guid="e089d7d8-20be-41ea-a8ee-0dc54e80efe2" InformativeScreenshot="88722199c6c32123a1a544ef58b1c82b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login | WellSky Personal Care' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="2771b6a2-1b47-4f3f-b0c1-904369e4c05b" CvElementArea="741, 596, 471, 60" CvTextArea="757, 587, 86, 16" CvTextArgument="Username:" CvType="InputBox" DesignTimeRectangle="752, 587, 98, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Username:' check:innerText='Username:' /&gt;" Guid="112cb8a3-7ba0-4a29-bad8-9068bbf57ed4" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,243.2" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="677ad1d9-56e1-4edc-a3c5-b52b759e323e" Text="Wh!t3bo@rd!23[k(Enter)]" Version="V4">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://arcccenter.clearcareonline.com/login/?next=/dashboard/" CVScreenId="38fabbd1-1d8b-46a9-9cc2-ea75cbe2744b" DesignTimeRectangle="740, 570, 473, 58" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='id_password' tag='INPUT' /&gt;" Guid="54044734-bc4c-414a-8950-dd33a8a09628" InformativeScreenshot="c739a6b2c81c7dbaed186c32fef93fa1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login | WellSky Personal Care' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="38fabbd1-1d8b-46a9-9cc2-ea75cbe2744b" CvElementArea="740, 569, 474, 61" CvTextArea="759, 560, 82, 17" CvTextArgument="Password:" CvType="InputBox" DesignTimeRectangle="754, 559, 94, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='div_password' tag='LABEL' type='' class='' aaname='Password:' check:innerText='Password:' /&gt;" Guid="bb55d1b5-c653-4b09-a319-00c492e9e3e3" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,91.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://arcccenter.clearcareonline.com/login/?next=/dashboard/" CVScreenId="cf07936f-c97c-44c4-97a4-87233d312c92" DesignTimeRectangle="739, 670, 475, 56" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='id_btn_sso' tag='INPUT' /&gt;" Guid="fe84fe63-0a85-4b40-b22d-ee37a5b730e4" InformativeScreenshot="efbbf93159e14e4be3728f9421d8a7e7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login | WellSky Personal Care' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="1086.4,114.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://arcccenter.clearcareonline.com/caregivers/9581143/" Version="V4" />
+            <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" Timeout="{x:Null}" Account="hamzabinnkashif@gmail.com" Action="UseExisting" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="1086.4,627.2" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_3" Mode="Browse" SpreadsheetId="https://docs.google.com/spreadsheets/d/1pvlQXE8lnTn85kixL7SjlwapDk0MiSwnBzFpAdMze5Y/edit?usp=drivesdk" SpreadsheetName="Wellsky Input" UseConnectionService="False" UserEmail="hamzabinnkashif@gmail.com">
+              <ugas:GoogleSheetsApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ugas:IGoogleSheetTarget" Name="Spreadsheet" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,304.8" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uga:ReadRange ContinueOnError="{x:Null}" Range="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" DisplayName="Read Range" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="382.4,243.2" sap2010:WorkflowViewState.IdRef="ReadRange_2" IncludeHeaders="True" Result="[ReadResult]" SheetName="Sheet1" />
+                  </Sequence>
+                </ActivityAction>
+              </ugas:GoogleSheetsApplicationScope.Body>
+              <ugas:GoogleSheetsApplicationScope.CredentialID>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </ugas:GoogleSheetsApplicationScope.CredentialID>
+              <ugas:GoogleSheetsApplicationScope.CredentialSecret>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </ugas:GoogleSheetsApplicationScope.CredentialSecret>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ugas:GoogleSheetsApplicationScope>
+            <Assign sap:VirtualizedContainerService.HintSize="1086.4,114.4" sap2010:WorkflowViewState.IdRef="Assign_34">
+              <Assign.To>
+                <OutArgument x:TypeArguments="scg:List(x:String)">[ProcessedEmployee]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="scg:List(x:String)">[New List(Of String)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="1086.4,114.4" sap2010:WorkflowViewState.IdRef="Assign_35">
+              <Assign.To>
+                <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Int32)">[Counter]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Int32)">[New Dictionary(Of String, Int32)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[CurrentRow]" DataTable="[ReadResult]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1086.4,11081.6" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1052.8,10891.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:BuildDataTable DataTable="[Otput_DT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="1019.2,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Sr.No&quot; msdata:DataType=&quot;System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Date&quot; msdata:DataType=&quot;System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Start_x0020_Time&quot; msdata:DataType=&quot;System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;End_x0020_Time&quot; msdata:DataType=&quot;System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Client_x0020_Name&quot; msdata:DataType=&quot;System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Client_x0020_Email&quot; msdata:DataType=&quot;System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+                    <Assign sap:VirtualizedContainerService.HintSize="1019.2,113.6" sap2010:WorkflowViewState.IdRef="Assign_20">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[EmployeeName]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[Currentrow(0).ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1019.2,176" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Current Employee &quot;+EmployeeName]" />
+                    <If Condition="[NOT ProcessedEmployee.Contains(EmployeeName)]" sap:VirtualizedContainerService.HintSize="1019.2,7027.2" sap2010:WorkflowViewState.IdRef="If_6">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="985.6,6767.2" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="677ad1d9-56e1-4edc-a3c5-b52b759e323e" Version="V4">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://arcccenter.clearcareonline.com/caregivers/9581143/" CVScreenId="74229cfa-c1b7-4409-8182-14fcbf7061fd" DesignTimeRectangle="1697, 379, 44, 33" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl class='icon' idx='2' parentid='title' tag='SPAN' /&gt;" Guid="d48db7c1-226c-4050-8c0d-3398d51f8fb1" InformativeScreenshot="2604aa6f7a1ec8f95246f277da17a8f5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='GEORGINA ALCOCER | WellSky Personal Care' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="1" DelayBetweenKeys="1" DisplayName="Type Into 'INPUT profile_search'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="952,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="677ad1d9-56e1-4edc-a3c5-b52b759e323e" Text="[CurrentRow(0).ToString]" Version="V4">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://arcccenter.clearcareonline.com/caregivers/9581143/" CVScreenId="f345ca39-770b-451b-8954-fe0bb12018d5" DesignTimeRectangle="1504, 432, 299, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='profile_search' tag='INPUT' /&gt;" Guid="df9667b9-3320-432f-b211-9cad5abbcee0" InformativeScreenshot="918323a763bb26bf37fe8bb7b61d21ee.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='GEORGINA ALCOCER | WellSky Personal Care' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                            </uix:NTypeInto.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NTypeInto>
+                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="5" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="952,246.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="677ad1d9-56e1-4edc-a3c5-b52b759e323e" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
+                            <uix:NKeyboardShortcuts.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NKeyboardShortcuts.VerifyOptions>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NKeyboardShortcuts>
+                          <uix:NCheckState DisplayName="Check App State '+ Mileage'" sap:VirtualizedContainerService.HintSize="952,494.4" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="677ad1d9-56e1-4edc-a3c5-b52b759e323e" Version="V4">
+                            <uix:NCheckState.IfExists>
+                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,244" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Shift Calendar'" sap:VirtualizedContainerService.HintSize="416,182.4" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="677ad1d9-56e1-4edc-a3c5-b52b759e323e" Version="V4">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://arcccenter.clearcareonline.com/caregivers/9581143/" CVScreenId="bbda38c8-1a3e-42dc-b30d-35ac0c6a12d6" DesignTimeRectangle="106, 835, 1705, 44" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl id='show_calendar' tag='A' /&gt;" Guid="3c9056ed-ec6a-4c78-b564-06d52aa49009" InformativeScreenshot="e988847e1fa9cab2b12e2eb18b580c67.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='GEORGINA ALCOCER | WellSky Personal Care' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                              </Sequence>
+                            </uix:NCheckState.IfExists>
+                            <uix:NCheckState.IfNotExists>
+                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,91.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Sequence>
+                            </uix:NCheckState.IfNotExists>
+                            <uix:NCheckState.Target>
+                              <uix:TargetAnchorable BrowserURL="https://arcccenter.clearcareonline.com/caregivers/9581143/" CVScreenId="36beba73-a9fc-4f86-a6bb-3cde9126d664" DesignTimeRectangle="149, 608, 134, 42" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='vnotes' tag='SPAN' /&gt;" Guid="bcea2982-58c5-47ac-94dc-7a65714ccd1a" InformativeScreenshot="b97187b9a98f05a3b9a33bafd899a307.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='GEORGINA ALCOCER | WellSky Personal Care' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                            </uix:NCheckState.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NCheckState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'month'" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="677ad1d9-56e1-4edc-a3c5-b52b759e323e" Version="V4">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://arcccenter.clearcareonline.com/caregivers/9581143/" CVScreenId="fa68bb98-88b2-451b-994b-749a290752d8" DesignTimeRectangle="1399, 612, 86, 37" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='calendar' tag='TABLE' /&gt;&lt;webctrl aaname='month' class='fc-button-content' tableRow='1' tag='SPAN' /&gt;" Guid="65719a2d-a56e-4bd0-9672-558331ef5837" InformativeScreenshot="84d887b57792f9c10c2286d355a695b2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='GEORGINA ALCOCER | WellSky Personal Care' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                          <Assign sap:VirtualizedContainerService.HintSize="952,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Int32">[IDX]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Int32">
+                                <Literal x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="Literal`1_1" Value="1" />
+                              </InArgument>
+                            </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Assign>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="952,176" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Index &quot;+IDX.ToString]" />
+                          <Assign sap:VirtualizedContainerService.HintSize="952,113.6" sap2010:WorkflowViewState.IdRef="Assign_8">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Int32">[Serial]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                            </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Assign>
+                          <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="952,4592.8" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                            <ui:InterruptibleWhile.Body>
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="534.4,4446.4" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="x:String" Name="DesiredColor2" />
+                                </Sequence.Variables>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="500.8,471.2" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                                  <TryCatch.Try>
+                                    <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="style" DelayAfter="0.1" DelayBefore="0.1" DisplayName="Get Attribute 'Get Attribute '815a-1104aLEE, JAMES''" sap:VirtualizedContainerService.HintSize="333.6,208" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_1" Result="[Color]" ScopeIdentifier="677ad1d9-56e1-4edc-a3c5-b52b759e323e" Timeout="5" Version="V4">
+                                      <uix:NGetAttributeGeneric.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://arcccenter.clearcareonline.com/caregivers/9581143/" CVScreenId="f80ce66d-14e3-4373-8ca4-c07b2891accc" ContentHash="l5P_BJnx-kS0v5df8VFVrA" DesignTimeRectangle="383, 699, 224, 42" DesignTimeScaleFactor="1.25" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='DIV' class='fc-event-inner fc-event-skin' idx='{0}' /&gt;&quot;, IDX)]" Guid="993070f8-8ef2-401a-8b88-883b42188c96" InformativeScreenshot="bae618c894dec296721386e6d4b04b65.png" Reference="fwIkxn7MXUy2Nzb0THRxfQ/A9k0kBIR2EibD4Ev0479eA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='GEORGINA ALCOCER | WellSky Personal Care' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                      </uix:NGetAttributeGeneric.Target>
+                                    </uix:NGetAttributeGeneric>
+                                  </TryCatch.Try>
+                                  <TryCatch.Catches>
+                                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ActivityAction x:TypeArguments="s:Exception">
+                                        <ActivityAction.Argument>
+                                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                        </ActivityAction.Argument>
+                                        <ui:Break sap:VirtualizedContainerService.HintSize="334.4,24.8" sap2010:WorkflowViewState.IdRef="Break_1" />
+                                      </ActivityAction>
+                                    </Catch>
+                                  </TryCatch.Catches>
+                                </TryCatch>
+                                <Assign sap:VirtualizedContainerService.HintSize="500.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:String">[DesiredColor]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:String">rgb(51, 102, 204)</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="500.8,176" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[DesiredColor+&quot; Desired color 1&quot;]" />
+                                <Assign sap:VirtualizedContainerService.HintSize="500.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_23">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:String">[DesiredColor2]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:String">rgb(37, 75, 150)</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="500.8,176" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[DesiredColor2+&quot; Desired Color 2&quot;]" />
+                                <If Condition="[Color.Contains(DesiredColor) or  Color.Contains(DesiredColor2)]" sap:VirtualizedContainerService.HintSize="500.8,984.8" sap2010:WorkflowViewState.IdRef="If_3">
+                                  <If.Then>
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,416.8" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382.4,176" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Current Color on Index &quot; +Color]" />
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Get Attribute '815a-1104aLEE, JAMES''" sap:VirtualizedContainerService.HintSize="382.4,180.8" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="677ad1d9-56e1-4edc-a3c5-b52b759e323e" Version="V4">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://arcccenter.clearcareonline.com/caregivers/9581143/" CVScreenId="f80ce66d-14e3-4373-8ca4-c07b2891accc" ContentHash="l5P_BJnx-kS0v5df8VFVrA" DesignTimeRectangle="383, 699, 224, 42" DesignTimeScaleFactor="1.25" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='DIV' class='fc-event-inner fc-event-skin' idx='{0}' /&gt;&quot;, IDX)]" Guid="993070f8-8ef2-401a-8b88-883b42188c96" InformativeScreenshot="bae618c894dec296721386e6d4b04b65.png" Reference="fwIkxn7MXUy2Nzb0THRxfQ/A9k0kBIR2EibD4Ev0479eA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='GEORGINA ALCOCER | WellSky Personal Care' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="467.2,397.6" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:Int32">[IDX]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:Int32">[IDX + 1]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,176" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;If not on index then the next index is &quot;+IDX.ToString]" />
+                                      <ui:Continue sap:VirtualizedContainerService.HintSize="433.6,48" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                                    </Sequence>
+                                  </If.Else>
+                                </If>
+                                <uix:NGetText DisplayName="Get Text 'LEON, MARELY'" sap:VirtualizedContainerService.HintSize="500.8,189.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="677ad1d9-56e1-4edc-a3c5-b52b759e323e" TextString="[ClientName]" Version="V4">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://arcccenter.clearcareonline.com/caregivers/9581143/" CVScreenId="64fa65fa-1964-47a7-a97c-d90dfbbdf253" DesignTimeRectangle="34, 545, 137, 19" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='A' idx='204' /&gt;" Guid="aca75bed-2985-4307-9030-73086124bfc9" ImageBase64="" InformativeScreenshot="7b19b46a82362bf4ecf57eeac7c8f920.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='GEORGINA ALCOCER | WellSky Personal Care' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                  </uix:NGetText.Target>
+                                </uix:NGetText>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="500.8,176" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Client Name &quot;+ClientName]" />
+                                <uix:NGetText DisplayName="Get Text 'October 29, 10:00 a.m. …'" sap:VirtualizedContainerService.HintSize="500.8,189.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="677ad1d9-56e1-4edc-a3c5-b52b759e323e" TextString="[DateTimeTogether]" Version="V4">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://arcccenter.clearcareonline.com/caregivers/9581143/" CVScreenId="126a95a0-9d50-416b-a547-97828d3d06c0" DesignTimeRectangle="147, 427, 411, 18" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;strong' tag='STRONG' /&gt;" Guid="5627697d-b3bc-4d30-afca-4f42f8df6c61" ImageBase64="" InformativeScreenshot="ba651f061b04a674592732a511cb3d23.png" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                                      <uix:TargetAnchorable.ScopeSelectorArgument>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <Literal x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Literal`1_2">&lt;html app='chrome.exe' title='GEORGINA ALCOCER | WellSky Personal Care' /&gt;</Literal>
+                                        </InArgument>
+                                      </uix:TargetAnchorable.ScopeSelectorArgument>
+                                    </uix:TargetAnchorable>
+                                  </uix:NGetText.Target>
+                                </uix:NGetText>
+                                <uix:NGetText DisplayName="Get Text '(619) 665-3302(m), rube…'" sap:VirtualizedContainerService.HintSize="500.8,189.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="677ad1d9-56e1-4edc-a3c5-b52b759e323e" TextString="[EmailContactCombined]" Version="V4">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://arcccenter.clearcareonline.com/caregivers/9581143/" CVScreenId="126a95a0-9d50-416b-a547-97828d3d06c0" DesignTimeRectangle="74, 358, 581, 18" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl class='addresses' tag='DIV' /&gt;" Guid="0b230f73-6fea-4aa4-99ae-7eb1c344f48b" ImageBase64="" InformativeScreenshot="a7cdb25fa5bc90c4fdb7ff6ae5bc8c0c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='GEORGINA ALCOCER | WellSky Personal Care' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                  </uix:NGetText.Target>
+                                </uix:NGetText>
+                                <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="500.8,274.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                                  <ui:MultipleAssign.AssignOperations>
+                                    <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                                        <ui:AssignOperation.To>
+                                          <OutArgument x:TypeArguments="x:String">[DateOnly]</OutArgument>
+                                        </ui:AssignOperation.To>
+                                        <ui:AssignOperation.Value>
+                                          <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(DateTimeTogether,"[\w]+ [\w]+(?=, )").ToString]</InArgument>
+                                        </ui:AssignOperation.Value>
+                                      </ui:AssignOperation>
+                                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                                        <ui:AssignOperation.To>
+                                          <OutArgument x:TypeArguments="x:String">[StartTime]</OutArgument>
+                                        </ui:AssignOperation.To>
+                                        <ui:AssignOperation.Value>
+                                          <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Matches(DateTimeTogether,"\d*:\d* (p\.m\.|a\.m\.)")(0).ToString]</InArgument>
+                                        </ui:AssignOperation.Value>
+                                      </ui:AssignOperation>
+                                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                                        <ui:AssignOperation.To>
+                                          <OutArgument x:TypeArguments="x:String">[EndTime]</OutArgument>
+                                        </ui:AssignOperation.To>
+                                        <ui:AssignOperation.Value>
+                                          <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Matches(DateTimeTogether,"\d*:\d* (p\.m\.|a\.m\.)")(1).ToString]</InArgument>
+                                        </ui:AssignOperation.Value>
+                                      </ui:AssignOperation>
+                                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                                        <ui:AssignOperation.To>
+                                          <OutArgument x:TypeArguments="x:String">[Email]</OutArgument>
+                                        </ui:AssignOperation.To>
+                                        <ui:AssignOperation.Value>
+                                          <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(EmailContactCombined,"\w+@\w+.\w+").ToString]</InArgument>
+                                        </ui:AssignOperation.Value>
+                                      </ui:AssignOperation>
+                                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+                                        <ui:AssignOperation.To>
+                                          <OutArgument x:TypeArguments="x:String">[ClientName]</OutArgument>
+                                        </ui:AssignOperation.To>
+                                        <ui:AssignOperation.Value>
+                                          <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(ClientName,"[\w]+, [\w]+").ToString]</InArgument>
+                                        </ui:AssignOperation.Value>
+                                      </ui:AssignOperation>
+                                    </scg:List>
+                                  </ui:MultipleAssign.AssignOperations>
+                                </ui:MultipleAssign>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="500.8,176" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info" Message="[&quot;Date &quot;+DateOnly]" />
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="500.8,176" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Info" Message="[&quot;Start Time &quot;+StartTime]" />
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="500.8,176" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info" Message="[&quot;End Time &quot;+EndTime]" />
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="500.8,176" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Info" Message="[&quot;Email &quot;+Email]" />
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="500.8,189.6" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="677ad1d9-56e1-4edc-a3c5-b52b759e323e" Version="V4">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://arcccenter.clearcareonline.com/caregivers/9581143/" CVScreenId="9da9ff93-fb59-4192-8e08-0d3a3765ecca" DesignTimeRectangle="1499, 501, 22, 34" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl class='close_button' tag='DIV' /&gt;" Guid="9963d225-97a0-4663-816e-5412dd5c2ffd" InformativeScreenshot="15933903fc90a626bdc91f3282d16c37.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='GEORGINA ALCOCER | WellSky Personal Care' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <Assign sap:VirtualizedContainerService.HintSize="500.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Int32">[IDX]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Int32">[IDX + 1]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{Serial.ToString, DateOnly.ToString, StartTime.ToString, EndTime.ToString, ClientName.ToString, Email.ToString}]" DataTable="[Otput_DT]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="500.8,220" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                                <Assign sap:VirtualizedContainerService.HintSize="500.8,104.8" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Int32">[Serial]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Int32">[Serial + 1]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </ui:InterruptibleWhile.Body>
+                            <ui:InterruptibleWhile.Condition>
+                              <Literal x:TypeArguments="x:Boolean" DisplayName="Literal" sap2010:WorkflowViewState.IdRef="Literal`1_1" Value="True" />
+                            </ui:InterruptibleWhile.Condition>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:InterruptibleWhile>
+                          <uasc:AppendItemToCollection x:TypeArguments="x:String" Collection="[ProcessedEmployee]" DisplayName="Append Items to Collection" sap:VirtualizedContainerService.HintSize="952,173.6" sap2010:WorkflowViewState.IdRef="AppendItemToCollection`1_2">
+                            <uasc:AppendItemToCollection.Items>
+                              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                                <InArgument x:TypeArguments="x:String">[EmployeeName]</InArgument>
+                              </scg:List>
+                            </uasc:AppendItemToCollection.Items>
+                          </uasc:AppendItemToCollection>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="952,167.2" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="Info" Message="[&quot;Already Processed Employee &quot;+ ProcessedEmployee(0)]" />
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89.6" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <If Condition="[Counter.ContainsKey(EmployeeName)]" sap:VirtualizedContainerService.HintSize="1019.2,3422.4" sap2010:WorkflowViewState.IdRef="If_7">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="483.2,2025.6" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="449.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_30">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Int32">[Counter(EmployeeName)]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Int32">[Counter(EmployeeName)+1]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="449.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_31">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[SheetName]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[EmployeeName + " " + Counter(EmployeeName).ToString]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="449.6,176" sap2010:WorkflowViewState.IdRef="LogMessage_23" Level="Info" Message="[&quot;Current Sheet Name &quot;+SheetName]" />
+                          <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" Timeout="{x:Null}" Account="hamzabinnkashif@gmail.com" Action="UseExisting" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="449.6,790.4" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_16" Mode="Browse" SpreadsheetId="https://docs.google.com/spreadsheets/d/1GjC-dRf1tDQIbTyK-fAJhsKRJmJwMefGKg-GxIdP8p4/edit?usp=drivesdk" SpreadsheetName="Output Hamza" UseConnectionService="False" UserEmail="hamzabinnkashif@gmail.com">
+                            <ugas:GoogleSheetsApplicationScope.Body>
+                              <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="ugas:IGoogleSheetTarget" Name="Spreadsheet" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,472.8" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uga:ReadRange ContinueOnError="{x:Null}" Range="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" DisplayName="Read Range" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="382.4,245.6" sap2010:WorkflowViewState.IdRef="ReadRange_4" IncludeHeaders="True" Result="[AlreadyEmployee]" SheetName="[EmployeeName]" />
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382.4,167.2" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="Info" Message="[&quot;Data of Employee which has already processed &quot;+AlreadyEmployee.ToString]" />
+                                </Sequence>
+                              </ActivityAction>
+                            </ugas:GoogleSheetsApplicationScope.Body>
+                            <ugas:GoogleSheetsApplicationScope.CredentialID>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </ugas:GoogleSheetsApplicationScope.CredentialID>
+                            <ugas:GoogleSheetsApplicationScope.CredentialSecret>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </ugas:GoogleSheetsApplicationScope.CredentialSecret>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ugas:GoogleSheetsApplicationScope>
+                          <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" Timeout="{x:Null}" Account="hamzabinnkashif@gmail.com" Action="UseExisting" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="449.6,772" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_17" Mode="Browse" SpreadsheetId="https://docs.google.com/spreadsheets/d/1GjC-dRf1tDQIbTyK-fAJhsKRJmJwMefGKg-GxIdP8p4/edit?usp=drivesdk" SpreadsheetName="Output Hamza" UseConnectionService="False" UserEmail="hamzabinnkashif@gmail.com">
+                            <ugas:GoogleSheetsApplicationScope.Body>
+                              <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="ugas:IGoogleSheetTarget" Name="Spreadsheet" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,463.2" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uga:AddNewSheet Columns="{x:Null}" ContinueOnError="{x:Null}" PositionIndex="{x:Null}" Rows="{x:Null}" AuthScopesInvalid="False" DisplayName="Add New Sheet" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="382.4,166.4" sap2010:WorkflowViewState.IdRef="AddNewSheet_13" SheetName="[SheetName]" SpreadsheetId="1GjC-dRf1tDQIbTyK-fAJhsKRJmJwMefGKg-GxIdP8p4" />
+                                  <uga:WriteRange ContinueOnError="{x:Null}" Request="{x:Null}" Result="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" DataTable="[AlreadyEmployee]" DisplayName="Write Range" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="382.4,236.8" sap2010:WorkflowViewState.IdRef="WriteRange_13" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[SheetName]" StartingCell="A1" />
+                                </Sequence>
+                              </ActivityAction>
+                            </ugas:GoogleSheetsApplicationScope.Body>
+                            <ugas:GoogleSheetsApplicationScope.CredentialID>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </ugas:GoogleSheetsApplicationScope.CredentialID>
+                            <ugas:GoogleSheetsApplicationScope.CredentialSecret>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </ugas:GoogleSheetsApplicationScope.CredentialSecret>
+                          </ugas:GoogleSheetsApplicationScope>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="483.2,1235.2" sap2010:WorkflowViewState.IdRef="Sequence_49">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="449.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_32">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Int32">[Counter(EmployeeName)]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="449.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_33">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[SheetName]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[EmployeeName]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="449.6,176" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="Info" Message="[&quot;Sheetname &quot;+SheetName]" />
+                          <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" Timeout="{x:Null}" Account="hamzabinnkashif@gmail.com" Action="UseExisting" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="449.6,772" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_15" Mode="Browse" SpreadsheetId="https://docs.google.com/spreadsheets/d/1GjC-dRf1tDQIbTyK-fAJhsKRJmJwMefGKg-GxIdP8p4/edit?usp=drivesdk" UseConnectionService="False" UserEmail="hamzabinnkashif@gmail.com">
+                            <ugas:GoogleSheetsApplicationScope.Body>
+                              <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="ugas:IGoogleSheetTarget" Name="Spreadsheet" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,463.2" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uga:AddNewSheet Columns="{x:Null}" ContinueOnError="{x:Null}" PositionIndex="{x:Null}" Rows="{x:Null}" AuthScopesInvalid="False" DisplayName="Add New Sheet" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="382.4,166.4" sap2010:WorkflowViewState.IdRef="AddNewSheet_12" SheetName="[SheetName]" SpreadsheetId="1GjC-dRf1tDQIbTyK-fAJhsKRJmJwMefGKg-GxIdP8p4" />
+                                  <uga:WriteRange ContinueOnError="{x:Null}" Request="{x:Null}" Result="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" DataTable="[Otput_DT]" DisplayName="Write Range" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="382.4,236.8" sap2010:WorkflowViewState.IdRef="WriteRange_12" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[SheetName]" StartingCell="A1" />
+                                </Sequence>
+                              </ActivityAction>
+                            </ugas:GoogleSheetsApplicationScope.Body>
+                            <ugas:GoogleSheetsApplicationScope.CredentialID>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </ugas:GoogleSheetsApplicationScope.CredentialID>
+                            <ugas:GoogleSheetsApplicationScope.CredentialSecret>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </ugas:GoogleSheetsApplicationScope.CredentialSecret>
+                            <ugas:GoogleSheetsApplicationScope.SpreadsheetName>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Literal`1_2">Output Hamza</Literal>
+                              </InArgument>
+                            </ugas:GoogleSheetsApplicationScope.SpreadsheetName>
+                          </ugas:GoogleSheetsApplicationScope>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="VOxR8GXknkCzcewRAxDgsw" IconBase64="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" InformativeScreenshot="47b93283254ee38e8904c3473467c23d.jpg" Reference="fwIkxn7MXUy2Nzb0THRxfQ/xuCqWUFbD0qHUmze7PLeaQ" Selector="&lt;html app='chrome.exe' title='Login | WellSky Personal Care' /&gt;" Title="Login | WellSky Personal Care" Url="https://arcccenter.clearcareonline.com/caregivers/9581143/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
