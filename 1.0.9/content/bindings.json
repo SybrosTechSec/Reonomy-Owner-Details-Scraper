@@ -1,0 +1,120 @@
+{
+  "version": "1.0",
+  "resources": [
+    {
+      "resource": "asset",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "Open Sessions",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "OS Sheet ID",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "Open Sessions",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "OS Sheet Name",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "Open Sessions",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "OS Backup Drive ID",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "Open Sessions",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "OS Backup Switch",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "Open Sessions",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "Wellsky Credentials",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "defaultValue": "602a6914-081a-4969-aaad-6978e7766007",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "Connector": {
+          "defaultValue": "uipath-google-sheets",
+          "isExpression": false
+        },
+        "UseConnectionService": {
+          "defaultValue": "True",
+          "isExpression": false,
+          "displayName": "Use Integration Service",
+          "description": "Uses the Integration Service to authenticate to the service"
+        }
+      }
+    },
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "defaultValue": "d67d7fa5-e1f2-4c6b-9c13-eb7e788ac72d",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "Connector": {
+          "defaultValue": "uipath-google-drive",
+          "isExpression": false
+        },
+        "UseConnectionService": {
+          "defaultValue": "True",
+          "isExpression": false,
+          "displayName": "Use Integration Service",
+          "description": "Uses the Integration Service to authenticate to the service"
+        }
+      }
+    }
+  ]
+}

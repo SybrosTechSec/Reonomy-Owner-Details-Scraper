@@ -1,0 +1,33 @@
+{
+  "DisplayName": "IntakeFormCheck",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "GoogleSheetsApplicationScope_6_Connection0",
+      "DisplayName": "GoogleSheetsApplicationScope_6_Connection",
+      "Category": null,
+      "Tooltip": "Use Google Spreadsheet",
+      "Placeholder": null,
+      "Widget": "Connection",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 1,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "GoogleDriveApplicationScope_8_Connection0",
+      "DisplayName": "GoogleDriveApplicationScope_8_Connection",
+      "Category": null,
+      "Tooltip": "Use Google Drive",
+      "Placeholder": null,
+      "Widget": "Connection",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 1,
+      "DataSourceItems": null
+    }
+  ]
+}
