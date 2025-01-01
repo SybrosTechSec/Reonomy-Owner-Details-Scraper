@@ -3,62 +3,7 @@
   "resources": [
     {
       "resource": "asset",
-      "value": {
-        "folderPath": {
-          "defaultValue": "Open Sessions",
-          "isExpression": false
-        },
-        "name": {
-          "defaultValue": "OS Sheet ID",
-          "isExpression": false
-        }
-      },
-      "metadata": {}
-    },
-    {
-      "resource": "asset",
-      "value": {
-        "folderPath": {
-          "defaultValue": "Open Sessions",
-          "isExpression": false
-        },
-        "name": {
-          "defaultValue": "OS Sheet Name",
-          "isExpression": false
-        }
-      },
-      "metadata": {}
-    },
-    {
-      "resource": "asset",
-      "value": {
-        "folderPath": {
-          "defaultValue": "Open Sessions",
-          "isExpression": false
-        },
-        "name": {
-          "defaultValue": "OS Backup Drive ID",
-          "isExpression": false
-        }
-      },
-      "metadata": {}
-    },
-    {
-      "resource": "asset",
-      "value": {
-        "folderPath": {
-          "defaultValue": "Open Sessions",
-          "isExpression": false
-        },
-        "name": {
-          "defaultValue": "OS Backup Switch",
-          "isExpression": false
-        }
-      },
-      "metadata": {}
-    },
-    {
-      "resource": "asset",
+      "key": "Open Sessions.Wellsky Credentials",
       "value": {
         "folderPath": {
           "defaultValue": "Open Sessions",
@@ -69,7 +14,104 @@
           "isExpression": false
         }
       },
-      "metadata": {}
+      "metadata": {
+        "BindingsVersion": "2.1",
+        "ActivityName": "Get Credential",
+        "DisplayLabel": "FullName"
+      }
+    },
+    {
+      "resource": "asset",
+      "key": "Open Sessions.OS Sheet ID",
+      "value": {
+        "folderPath": {
+          "defaultValue": "Open Sessions",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "OS Sheet ID",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.1",
+        "ActivityName": "Sheet ID",
+        "DisplayLabel": "FullName"
+      }
+    },
+    {
+      "resource": "asset",
+      "key": "Open Sessions.OS Sheet Name",
+      "value": {
+        "folderPath": {
+          "defaultValue": "Open Sessions",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "OS Sheet Name",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.1",
+        "ActivityName": "Sheet name",
+        "DisplayLabel": "FullName"
+      }
+    },
+    {
+      "resource": "asset",
+      "key": "Open Sessions.OS Backup Drive ID",
+      "value": {
+        "folderPath": {
+          "defaultValue": "Open Sessions",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "OS Backup Drive ID",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.1",
+        "ActivityName": "Backup drive ID",
+        "DisplayLabel": "FullName"
+      }
+    },
+    {
+      "resource": "asset",
+      "key": "Open Sessions.OS Backup Switch",
+      "value": {
+        "folderPath": {
+          "defaultValue": "Open Sessions",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "OS Backup Switch",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.1",
+        "ActivityName": "Backup switch",
+        "DisplayLabel": "FullName"
+      }
+    },
+    {
+      "resource": "Connection",
+      "key": "abe14b86-ecbf-4981-b20f-dfb67557b7c3",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "abe14b86-ecbf-4981-b20f-dfb67557b7c3",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.1",
+        "Connector": "uipath-google-sheets",
+        "UseConnectionService": "True"
+      }
     },
     {
       "resource": "Connection",
@@ -85,23 +127,6 @@
       "metadata": {
         "BindingsVersion": "2.1",
         "Connector": "uipath-google-sheets",
-        "UseConnectionService": "True"
-      }
-    },
-    {
-      "resource": "Connection",
-      "key": "d67d7fa5-e1f2-4c6b-9c13-eb7e788ac72d",
-      "value": {
-        "ConnectionId": {
-          "defaultValue": "d67d7fa5-e1f2-4c6b-9c13-eb7e788ac72d",
-          "isExpression": false,
-          "displayName": "Connection",
-          "description": "The connection to be used"
-        }
-      },
-      "metadata": {
-        "BindingsVersion": "2.1",
-        "Connector": "uipath-google-drive",
         "UseConnectionService": "True"
       }
     }

@@ -1,22 +1,22 @@
 {
-  "name": "2_OS_HIF",
-  "projectId": "39a1969b-b7ea-4c26-a0aa-8dc63da7b29b",
-  "description": "Adds \"HIF\" in Intake Form  column in Open Sessions sheet after searching for intake forms in Google Drive.",
-  "main": "IntakeFormCheck.xaml",
+  "name": "3_OS_HRS",
+  "projectId": "c21e65e3-c33b-47f2-9208-6229829d79da",
+  "description": "Adds \"HRS\" or \"NHRS\" in Notes column in Open Sessions sheet by searching for remaining time left for every client on Wellsky portal.",
+  "main": "CheckClientRemainingTime.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.24.4]",
+    "UiPath.Excel.Activities": "[2.25.0-preview]",
     "UiPath.GSuite.Activities": "[2.8.22]",
     "UiPath.Mail.Activities": "[1.24.11]",
-    "UiPath.System.Activities": "[24.11.0-preview]",
+    "UiPath.System.Activities": "[24.12.0-preview]",
     "UiPath.Testing.Activities": "[24.10.3]",
-    "UiPath.UIAutomation.Activities": "[24.12.2-preview]",
+    "UiPath.UIAutomation.Activities": "[24.12.3-preview]",
     "Wellsky": "[1.2.3]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
-  "studioVersion": "23.12.0.0",
-  "projectVersion": "1.1.1",
+  "studioVersion": "24.2.0.0",
+  "projectVersion": "1.0.6",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -55,8 +55,20 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "IntakeFormCheck.xaml",
-      "uniqueId": "942d2519-fb20-4d45-b596-844b1f833b1e",
+      "filePath": "Main.xaml",
+      "uniqueId": "f643a8d7-7eec-46e5-81b6-cb58f25b4e4f",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "CheckClientRemainingTime\\CheckClientRemainingTime.xaml",
+      "uniqueId": "11bf71d6-6261-43ec-8bf5-c38ce92831a9",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "CheckClientRemainingTime.xaml",
+      "uniqueId": "3465939a-717c-40aa-9ad0-64e2ee4ecb9c",
       "input": [],
       "output": []
     }

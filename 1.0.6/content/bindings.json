@@ -9,7 +9,44 @@
           "isExpression": false
         },
         "name": {
+          "defaultValue": "Wellsky Credentials",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "Get Credential",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "FullName",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "Open Sessions",
+          "isExpression": false
+        },
+        "name": {
           "defaultValue": "OS Sheet ID",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "Sheet ID",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "FullName",
           "isExpression": false
         }
       }
@@ -24,6 +61,18 @@
         "name": {
           "defaultValue": "OS Sheet Name",
           "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "Sheet name",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "FullName",
+          "isExpression": false
         }
       }
     },
@@ -36,6 +85,18 @@
         },
         "name": {
           "defaultValue": "OS Backup Drive ID",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "Backup drive ID",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "FullName",
           "isExpression": false
         }
       }
@@ -50,18 +111,17 @@
         "name": {
           "defaultValue": "OS Backup Switch",
           "isExpression": false
-        }
-      }
-    },
-    {
-      "resource": "asset",
-      "metadata": {
-        "folderPath": {
-          "defaultValue": "Open Sessions",
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
           "isExpression": false
         },
-        "name": {
-          "defaultValue": "Wellsky Credentials",
+        "ActivityName": {
+          "defaultValue": "Backup switch",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "FullName",
           "isExpression": false
         }
       }
@@ -70,7 +130,7 @@
       "resource": "Connection",
       "metadata": {
         "ConnectionId": {
-          "defaultValue": "602a6914-081a-4969-aaad-6978e7766007",
+          "defaultValue": "abe14b86-ecbf-4981-b20f-dfb67557b7c3",
           "isExpression": false,
           "displayName": "Connection",
           "description": "The connection to be used"
@@ -95,7 +155,7 @@
       "resource": "Connection",
       "metadata": {
         "ConnectionId": {
-          "defaultValue": "d67d7fa5-e1f2-4c6b-9c13-eb7e788ac72d",
+          "defaultValue": "602a6914-081a-4969-aaad-6978e7766007",
           "isExpression": false,
           "displayName": "Connection",
           "description": "The connection to be used"
@@ -105,7 +165,7 @@
           "isExpression": false
         },
         "Connector": {
-          "defaultValue": "uipath-google-drive",
+          "defaultValue": "uipath-google-sheets",
           "isExpression": false
         },
         "UseConnectionService": {
