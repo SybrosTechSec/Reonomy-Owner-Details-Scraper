@@ -11,18 +11,6 @@
         "name": {
           "defaultValue": "Wellsky Credentials",
           "isExpression": false
-        },
-        "BindingsVersion": {
-          "defaultValue": "2.1",
-          "isExpression": false
-        },
-        "ActivityName": {
-          "defaultValue": "Get Credential",
-          "isExpression": false
-        },
-        "DisplayLabel": {
-          "defaultValue": "FullName",
-          "isExpression": false
         }
       }
     },
@@ -35,18 +23,6 @@
         },
         "name": {
           "defaultValue": "OS Sheet ID",
-          "isExpression": false
-        },
-        "BindingsVersion": {
-          "defaultValue": "2.1",
-          "isExpression": false
-        },
-        "ActivityName": {
-          "defaultValue": "Sheet ID",
-          "isExpression": false
-        },
-        "DisplayLabel": {
-          "defaultValue": "FullName",
           "isExpression": false
         }
       }
@@ -61,18 +37,6 @@
         "name": {
           "defaultValue": "OS Sheet Name",
           "isExpression": false
-        },
-        "BindingsVersion": {
-          "defaultValue": "2.1",
-          "isExpression": false
-        },
-        "ActivityName": {
-          "defaultValue": "Sheet name",
-          "isExpression": false
-        },
-        "DisplayLabel": {
-          "defaultValue": "FullName",
-          "isExpression": false
         }
       }
     },
@@ -86,18 +50,6 @@
         "name": {
           "defaultValue": "OS Backup Drive ID",
           "isExpression": false
-        },
-        "BindingsVersion": {
-          "defaultValue": "2.1",
-          "isExpression": false
-        },
-        "ActivityName": {
-          "defaultValue": "Backup drive ID",
-          "isExpression": false
-        },
-        "DisplayLabel": {
-          "defaultValue": "FullName",
-          "isExpression": false
         }
       }
     },
@@ -110,18 +62,6 @@
         },
         "name": {
           "defaultValue": "OS Backup Switch",
-          "isExpression": false
-        },
-        "BindingsVersion": {
-          "defaultValue": "2.1",
-          "isExpression": false
-        },
-        "ActivityName": {
-          "defaultValue": "Backup switch",
-          "isExpression": false
-        },
-        "DisplayLabel": {
-          "defaultValue": "FullName",
           "isExpression": false
         }
       }

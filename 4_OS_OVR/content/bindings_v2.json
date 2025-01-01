@@ -3,7 +3,6 @@
   "resources": [
     {
       "resource": "asset",
-      "key": "Open Sessions.Wellsky Credentials",
       "value": {
         "folderPath": {
           "defaultValue": "Open Sessions",
@@ -14,15 +13,10 @@
           "isExpression": false
         }
       },
-      "metadata": {
-        "BindingsVersion": "2.1",
-        "ActivityName": "Get Credential",
-        "DisplayLabel": "FullName"
-      }
+      "metadata": {}
     },
     {
       "resource": "asset",
-      "key": "Open Sessions.OS Sheet ID",
       "value": {
         "folderPath": {
           "defaultValue": "Open Sessions",
@@ -33,15 +27,10 @@
           "isExpression": false
         }
       },
-      "metadata": {
-        "BindingsVersion": "2.1",
-        "ActivityName": "Sheet ID",
-        "DisplayLabel": "FullName"
-      }
+      "metadata": {}
     },
     {
       "resource": "asset",
-      "key": "Open Sessions.OS Sheet Name",
       "value": {
         "folderPath": {
           "defaultValue": "Open Sessions",
@@ -52,15 +41,10 @@
           "isExpression": false
         }
       },
-      "metadata": {
-        "BindingsVersion": "2.1",
-        "ActivityName": "Sheet name",
-        "DisplayLabel": "FullName"
-      }
+      "metadata": {}
     },
     {
       "resource": "asset",
-      "key": "Open Sessions.OS Backup Drive ID",
       "value": {
         "folderPath": {
           "defaultValue": "Open Sessions",
@@ -71,15 +55,10 @@
           "isExpression": false
         }
       },
-      "metadata": {
-        "BindingsVersion": "2.1",
-        "ActivityName": "Backup drive ID",
-        "DisplayLabel": "FullName"
-      }
+      "metadata": {}
     },
     {
       "resource": "asset",
-      "key": "Open Sessions.OS Backup Switch",
       "value": {
         "folderPath": {
           "defaultValue": "Open Sessions",
@@ -90,11 +69,7 @@
           "isExpression": false
         }
       },
-      "metadata": {
-        "BindingsVersion": "2.1",
-        "ActivityName": "Backup switch",
-        "DisplayLabel": "FullName"
-      }
+      "metadata": {}
     },
     {
       "resource": "Connection",

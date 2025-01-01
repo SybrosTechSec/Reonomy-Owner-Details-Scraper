@@ -1,0 +1,74 @@
+{
+  "name": "4_OS_OVR",
+  "projectId": "d5aa96c2-6cc3-4a3a-a4ea-4431c017610e",
+  "description": "Add \"OVR\" and \"NOVR\" in the Notes column in Open Sessions sheets by searching for every client on Wellsky portal.",
+  "main": "CheckSchedule.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.23.4]",
+    "UiPath.GSuite.Activities": "[2.5.2-preview]",
+    "UiPath.Mail.Activities": "[1.21.1]",
+    "UiPath.System.Activities": "[24.10.4]",
+    "UiPath.Testing.Activities": "[24.10.0]",
+    "UiPath.UIAutomation.Activities": "[24.10.2]",
+    "Wellsky": "[1.2.3]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.12.0.0",
+  "projectVersion": "1.0.5",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "arguments": {
+    "input": [],
+    "output": []
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "98728512-a2a4-42f2-b79c-7fa83cd0ce2b",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "CheckSchedule.xaml",
+      "uniqueId": "f91a07c2-e873-47c8-bfb1-cf2fedbcd985",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
