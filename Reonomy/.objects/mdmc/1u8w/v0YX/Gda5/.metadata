@@ -1,0 +1,14 @@
+﻿{
+  "Name": "app.reonomy.com!searc…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "Gda5YKXyJkyvs1oYD8W0Mw",
+  "Reference": "0AvUmlshOk-nZJqTYGYDLg/Gda5YKXyJkyvs1oYD8W0Mw",
+  "ParentRef": "0AvUmlshOk-nZJqTYGYDLg/v0YX9TUcJES_GGMiVE8bFg",
+  "Created": "2025-02-13T13:40:03.5892777Z",
+  "Updated": "2025-02-13T13:40:03.5892777Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1LxbkddiQkmdbfnj-ococw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.reonomy.com/!/search/e18d1458-2bf5-4dbc-9c5e-eedbd9fca5e4/property/cf5d6674-709f-4117-9d66-74709f211719/ownership" DesignTimeRectangle="205, 72, 1452, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='Address and search bar' /&gt;" Guid="3b915446-bc2c-440b-b308-b4b04e88d7d4" ImageBase64="" ScopeSelectorArgument="&lt;wnd app='chrome.exe' title='Reonomy - Google Chrome' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="6778663a3a1528593083c4207a8e382d.png" xmlns="">0nrJC3C8nLkKRGjlFmozSqA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
