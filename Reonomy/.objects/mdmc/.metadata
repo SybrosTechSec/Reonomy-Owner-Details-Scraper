@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Reonomy",
+  "Type": "App",
+  "Id": "mdmc_TwAdkyxFBhzvhBESg",
+  "Reference": "0AvUmlshOk-nZJqTYGYDLg/mdmc_TwAdkyxFBhzvhBESg",
+  "Created": "2025-02-13T10:38:16.3895923Z",
+  "Updated": "2025-02-13T10:38:16.3895923Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
