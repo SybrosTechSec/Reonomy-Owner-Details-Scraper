@@ -172,18 +172,18 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NGetText DisplayName="Get Text 'app.reonomy.com!searc…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="568,189.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="ca5b4085-1d62-466c-981f-5fbabb24e565" TextString="[CurrentPageUrl]" Version="V4">
+                  <uix:NGetText DisplayName="Get Page URL" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="568,189.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="ca5b4085-1d62-466c-981f-5fbabb24e565" TextString="[CurrentPageUrl]" Version="V4">
                     <uix:NGetText.Target>
                       <uix:TargetAnchorable BrowserURL="app.reonomy.com/!/search/e18d1458-2bf5-4dbc-9c5e-eedbd9fca5e4/property/cf5d6674-709f-4117-9d66-74709f211719/ownership" DesignTimeRectangle="205, 72, 1452, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='Address and search bar' /&gt;" Guid="3b915446-bc2c-440b-b308-b4b04e88d7d4" ImageBase64="" InformativeScreenshot="6778663a3a1528593083c4207a8e382d.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' title='Reonomy - Google Chrome' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
                     </uix:NGetText.Target>
                   </uix:NGetText>
                   <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="568,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_7" Text="[&quot;Current URL   &quot;+ CurrentPageUrl]" />
-                  <uix:NGetText DelayBefore="4" DisplayName="Get Text '4002 s walton walker bl…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="568,189.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="ca5b4085-1d62-466c-981f-5fbabb24e565" TextString="[PropertyName]" Version="V4">
+                  <uix:NGetText DelayBefore="4" DisplayName="Get Property Name" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="568,189.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="ca5b4085-1d62-466c-981f-5fbabb24e565" TextString="[PropertyName]" Version="V4">
                     <uix:NGetText.Target>
                       <uix:TargetAnchorable BrowserURL="app.reonomy.com/!/search/e18d1458-2bf5-4dbc-9c5e-eedbd9fca5e4/property/cf5d6674-709f-4117-9d66-74709f211719/ownership" DesignTimeRectangle="29, 806, 537, 38" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;p' isleaf='1' idx='1' /&gt;" Guid="5e86c5d9-1b4d-4a88-a1c5-bf40283f125a" ImageBase64="" InformativeScreenshot="342e5b7084fb4b82f864af1d0617fca8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Reonomy' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
                     </uix:NGetText.Target>
                   </uix:NGetText>
-                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Output_DT]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='section' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="568,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="ca5b4085-1d62-466c-981f-5fbabb24e565" Version="V4">
+                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Output_DT]" DisplayName="Extract Details" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='section' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="568,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="ca5b4085-1d62-466c-981f-5fbabb24e565" Version="V4">
                     <uix:NExtractData.Target>
                       <uix:TargetAnchorable BrowserURL="https://app.reonomy.com/!/search/c13414b4-5dc2-449f-95f2-600e8657939c/property/98e0160e-5c66-4d26-a016-0e5c66cd2670/ownership?page=1" ContentHash="DNEj0ghYgkSKfQ_UYuq3BQ" DesignTimeRectangle="8, 584, 1902, 1064" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='property-details-section-ownership' tag='DIV' /&gt;" Guid="ad2e41f2-0958-4e78-8c92-41e568d8a946" InformativeScreenshot="61bc92472a6ee8d9a5e21c668ee5c316.png" Reference="gDmSiReDCUyH18MoBVwjkA/_-WepPv2O06ihd5p1KBY5Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Reonomy' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
                     </uix:NExtractData.Target>
@@ -208,7 +208,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </Assign>
-                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Output_DT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="568,362.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Output_DT]" DisplayName="For Each Row To convert DataTable in Txt file" sap:VirtualizedContainerService.HintSize="568,362.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                     <ui:ForEachRow.Body>
                       <ActivityAction x:TypeArguments="sd:DataRow">
                         <ActivityAction.Argument>
@@ -294,7 +294,7 @@
                       </scg:List>
                     </ui:MultipleAssign.AssignOperations>
                   </ui:MultipleAssign>
-                  <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="[idxplaincaseloop]" DisplayName="For Each currentItem" sap:VirtualizedContainerService.HintSize="568,428" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[PlainCase]">
+                  <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="[idxplaincaseloop]" DisplayName="For Each currentItem in Plain Case" sap:VirtualizedContainerService.HintSize="568,428" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[PlainCase]">
                     <ui:ForEach.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
@@ -342,7 +342,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:ForEach>
-                  <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="[idxviewcontactcase]" DisplayName="For Each currentItem" sap:VirtualizedContainerService.HintSize="568,428" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[ViewContactsCase]">
+                  <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="[idxviewcontactcase]" DisplayName="For Each currentItem in View Contacts Case" sap:VirtualizedContainerService.HintSize="568,428" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[ViewContactsCase]">
                     <ui:ForEach.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
@@ -390,7 +390,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:ForEach>
-                  <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="[idxrelatedtocase]" DisplayName="For Each currentItem" sap:VirtualizedContainerService.HintSize="568,428" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[RelatedToCase]">
+                  <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="[idxrelatedtocase]" DisplayName="For Each currentItem in Related To Case" sap:VirtualizedContainerService.HintSize="568,428" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[RelatedToCase]">
                     <ui:ForEach.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
@@ -437,7 +437,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:ForEach>
-                  <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="568,2275.2" sap2010:WorkflowViewState.IdRef="ForEach`1_8" Values="[MergedList]">
+                  <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText in Merged List" sap:VirtualizedContainerService.HintSize="568,2275.2" sap2010:WorkflowViewState.IdRef="ForEach`1_8" Values="[MergedList]">
                     <ui:ForEach.Body>
                       <ActivityAction x:TypeArguments="x:String">
                         <ActivityAction.Argument>
@@ -500,7 +500,7 @@
                               </scg:List>
                             </ui:MultipleAssign.AssignOperations>
                           </ui:MultipleAssign>
-                          <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each currentItem" sap:VirtualizedContainerService.HintSize="500.8,311.2" sap2010:WorkflowViewState.IdRef="ForEach`1_9" Values="[PhoneNumber]">
+                          <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each currentItem Append Phone Numbers" sap:VirtualizedContainerService.HintSize="500.8,311.2" sap2010:WorkflowViewState.IdRef="ForEach`1_9" Values="[PhoneNumber]">
                             <ui:ForEach.Body>
                               <ActivityAction x:TypeArguments="x:Object">
                                 <ActivityAction.Argument>
@@ -530,7 +530,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:ForEach>
-                          <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each currentItem" sap:VirtualizedContainerService.HintSize="500.8,311.2" sap2010:WorkflowViewState.IdRef="ForEach`1_10" Values="[Emails]">
+                          <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each currentItem Append Emails" sap:VirtualizedContainerService.HintSize="500.8,311.2" sap2010:WorkflowViewState.IdRef="ForEach`1_10" Values="[Emails]">
                             <ui:ForEach.Body>
                               <ActivityAction x:TypeArguments="x:Object">
                                 <ActivityAction.Argument>
