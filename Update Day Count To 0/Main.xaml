@@ -110,13 +110,13 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1156,1987.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1172.8,562.84" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="755.2,1964" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+    <ui:RetryScope DisplayName="Day to Week Workflow" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="RetryScope_1">
       <ui:RetryScope.ActivityBody>
         <ActivityAction>
           <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="713.6,1764.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
@@ -231,6 +231,12 @@
       <ui:RetryScope.Condition>
         <ActivityFunc x:TypeArguments="x:Boolean" />
       </ui:RetryScope.Condition>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:RetryScope>
   </Sequence>
 </Activity>

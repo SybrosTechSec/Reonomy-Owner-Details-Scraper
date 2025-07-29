@@ -1,20 +1,22 @@
 {
-  "name": "CorrLinks",
-  "projectId": "eb7a21ed-4a8b-48cf-9b6f-2b9d6904f6e3",
-  "description": "Blank Process",
-  "main": "Main.xaml",
+  "name": "4_OS_OVR",
+  "projectId": "d5aa96c2-6cc3-4a3a-a4ea-4431c017610e",
+  "description": "Add \"OVR\" and \"NOVR\" in the Notes column in Open Sessions sheets by searching for every client on Wellsky portal.",
+  "main": "CheckSchedule.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.25.1-preview]",
-    "UiPath.Mail.Activities": "[2.0.11]",
-    "UiPath.System.Activities": "[25.2.3]",
-    "UiPath.Testing.Activities": "[24.10.4]",
-    "UiPath.UIAutomation.Activities": "[25.2.1-preview]"
+    "UiPath.Excel.Activities": "[3.0.0-preview]",
+    "UiPath.GSuite.Activities": "[3.1.1-preview]",
+    "UiPath.Mail.Activities": "[2.1.0-preview]",
+    "UiPath.System.Activities": "[25.2.4]",
+    "UiPath.Testing.Activities": "[25.4.0-preview]",
+    "UiPath.UIAutomation.Activities": "[25.2.1-preview]",
+    "Wellsky": "[1.2.3]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
-  "studioVersion": "24.10.6.0",
-  "projectVersion": "1.0.0",
+  "studioVersion": "23.12.0.0",
+  "projectVersion": "1.1.4",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -50,7 +52,13 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "0a705ab9-c6c5-406a-be06-45fb9c24d598",
+      "uniqueId": "98728512-a2a4-42f2-b79c-7fa83cd0ce2b",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "CheckSchedule.xaml",
+      "uniqueId": "f91a07c2-e873-47c8-bfb1-cf2fedbcd985",
       "input": [],
       "output": []
     }
